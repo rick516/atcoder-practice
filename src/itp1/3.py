@@ -1,7 +1,6 @@
-a = int(input())
-b = int(input())
+list = input().split(" ")
+a = int(list[0])
+b = int(list[1])
 
-if a <= 100 or a >= 1 or b <= 100 or b >= 1:
-    area = a * b
-    perimeter = 2 * (a + b)
-    print(area, perimeter)
+if 1 <= a <= 100 and 1 <= b <= 100:
+    print(a * b, 2 * (a + b))
