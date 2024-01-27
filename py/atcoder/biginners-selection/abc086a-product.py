@@ -1,5 +1,8 @@
-a = int(input())
-b, c = map(int, input().split())
-s = input()
+a,b = map(int, input().split())
 
-print(f"{a+b+c} {s}")
+if a * b % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+
