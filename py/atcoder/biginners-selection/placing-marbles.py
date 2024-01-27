@@ -1,11 +1,6 @@
-
-function Main(args) {
-  const marbles = args.split("").map((arg) => parseInt(arg, 10));
-  const count = marbles.filter((marble) => marble === 1).length;
-  console.log(count);
-}
-
-Main(require("fs").readFileSync("/dev/stdin", "utf8"));
+marbles = map(int, input().strip())
+marbles = [num for num in marbles if num == 1]
+print(len(marbles))
 
 
 
